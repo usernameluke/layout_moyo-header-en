@@ -11,10 +11,9 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
 }
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,7 +22,7 @@ header {
 }
 
 .logo {
-  padding-top: 2px;
+  display: flex;
 }
 
 .nav {
@@ -37,8 +36,12 @@ header {
   padding: 0;
 }
 
-.item + .item {
+.item {
   margin-left: 20px;
+}
+
+.item:first-child {
+  margin-left: 0;
 }
 
 .links {
